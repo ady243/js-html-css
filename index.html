@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Agence de voyage - Villas en location</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Agence de voyage - Villas en location</h1>
+    </header>
+
+    <nav>
+        <h2>Choisissez votre destination :</h2>
+        <ul>
+            <li><a href="#villa1">Villa 1</a></li>
+            <li><a href="#villa2">Villa 2</a></li>
+            <li><a href="#villa3">Villa 3</a></li>
+            <li><a href="#villa4">Villa 4</a></li>
+            <li><a href="#villa5">Villa 5</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="villa1">
+            <h2>Villa 1</h2>
+
+            <h3 class="location">Emplacement géographique : <span>Paris</span></h3>
+
+            <h3>Photos extérieures :</h3>
+            <div class="carousel">
+                <img src="villa1_exterior1.jpg" alt="Villa 1 - Extérieur 1">
+                <img src="villa1_exterior2.jpg" alt="Villa 1 - Extérieur 2">
+                <img src="villa1_exterior3.jpg" alt="Villa 1 - Extérieur 3">
+            </div>
+
+            <h3>Chambres :</h3>
+            <div class="carousel">
+                <img src="images/villa1_bedroom1_1.jpg" alt="Villa 1 - Chambre 1 - Photo 1">
+                <img src="villa1_bedroom1_2.jpg" alt="Villa 1 - Chambre 1 - Photo 2">
+                <img src="villa1_bedroom1_3.jpg" alt="Villa 1 - Chambre 1 - Photo 3">
+            </div>
+
+
+            <h3>Simulation de loyer :</h3>
+            <div class="rent-simulation">
+                <label for="duration">Durée (en semaines) :</label>
+                <input type="text" id="duration">
+                <label for="numTenants">Nombre de locataires :</label>
+                <input type="text" id="numTenants">
+                <button onclick="calculateRent()">Calculer le loyer</button>
+                <p id="totalRent"></p>
+            </div>
+        </section>
+
+        <section id="villa2">
+            <h2>Villa 2</h2>
+            <h3 class="location">Emplacement géographique : <span>Nice</span></h3>
+            <!-- Ajoutez le contenu pour la Villa 2 ici -->
+        </section>
+
+        <section id="villa3">
+            <h2>Villa 3</h2>
+            <h3 class="location">Emplacement géographique : <span>Marseille</span></h3>
+            <!-- Ajoutez le contenu pour la Villa 3 ici -->
+        </section>
+
+        <section id="villa4">
+            <h2>Villa 4</h2>
+            <h3 class="location">Emplacement géographique : <span>Bordeaux</span></h3>
+            <!-- Ajoutez le contenu pour la Villa 4 ici -->
+        </section>
+
+        <section id="villa5">
+            <h2>Villa 5</h2>
+            <h3 class="location">Emplacement géographique : <span>Lyon</span></h3>
+            <!-- Ajoutez le contenu pour la Villa 5 ici -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Agence de voyage</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
